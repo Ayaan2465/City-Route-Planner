@@ -22,7 +22,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: city-rout-planner-main/frontend
 
     steps:
       - name: Checkout repository
@@ -42,7 +42,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend/dist
+          path: city-rout-planner-main/frontend/dist
 
   deploy:
     runs-on: ubuntu-latest
